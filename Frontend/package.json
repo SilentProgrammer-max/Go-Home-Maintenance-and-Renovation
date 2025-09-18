@@ -1,0 +1,23 @@
+{
+  "name": "property_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.12",
+    "vite": "^7.1.4"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.12"
+  }
+}

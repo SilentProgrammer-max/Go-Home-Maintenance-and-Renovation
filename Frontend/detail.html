@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | SMB Renovation</title>
+  <link rel="icon" href="assets/logo.PNG" type="image/png">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+
+    /* Wider max-width for large screens */
+    @media (min-width: 1024px) {
+      .content-max {
+        max-width: 90vw;
+        margin: 0 auto;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .content-max {
+        max-width: 85vw;
+      }
+    }
+
+    @media (min-width: 1536px) {
+      .content-max {
+        max-width: 80vw;
+      }
+    }
+
+    /* Glow animation for icons */
+    .glow {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .glow:hover {
+      text-shadow: 0 0 10px #C85716, 0 0 20px #C85716, 0 0 30px #C85716;
+      transform: scale(1.1);
+    }
+
+    /* Subtle floating animation for icons */
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+
+    .float {
+      animation: float 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-[#010a0e] text-gray-300">
+
+  <!-- Scroll Button --> <button id="scrollBtn"
+    class="fixed bottom-6 left-6 w-12 h-12 flex items-center justify-center shadow-2xl rounded-lg bg-[#C85716] text-white shadow-[#e25b0c] hover:bg-[#b14e14] transform hover:-translate-y-1 transition duration-300 z-50">
+    <i id="scrollIcon" class="fa-solid fa-arrow-down"></i> </button>
+
+  <!-- Top Banner with Overlay -->
+  <section class="relative w-full h-96 lg:h-[400px] overflow-hidden">
+    <img src="assets/hero.jpeg" alt="Our Services" class="w-full h-full object-cover">
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-black/90 via-black/50 to-black/100 flex flex-col items-center justify-center space-y-8">
+      <h1 class="text-4xl lg:text-5xl font-bold text-white text-center px-4 drop-shadow-lg" data-aos="fade-down">
+        Our Renovation & Services
+      </h1>
+
+      <!-- Breadcrumb -->
+      <div class="text-center text-gray-300 text-base lg:text-lg flex justify-center gap-2" data-aos="fade-up">
+        <a href="index.html"
+          class="text-[#eb6111] hover:text-[#ca4e0b] transition-colors duration-200 font-semibold">Home</a>
+        <span>/ Services</span>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Main Content Section -->
+  <section class="content-max mx-auto px-6 lg:px-0 py-30 space-y-24">
+
+    <!-- Intro Paragraph -->
+    <div class="space-y-6 text-center lg:text-left" data-aos="fade-up">
+      <h2 class="text-3xl lg:text-4xl font-bold text-white">Transforming Spaces with Expertise</h2>
+      <p class="text-gray-300 text-lg lg:text-xl leading-relaxed">
+        SMB Renovation specializes in complete renovation solutions – kitchens, toilets, villas, swimming pools, and
+        more. We combine modern design, quality materials, and expert workmanship to create spaces that are beautiful,
+        functional, and tailored to your vision.
+      </p>
+    </div>
+    <!-- Elegant Image Section -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center overflow-hidden" data-aos="fade-up">
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <img src="assets/renovation.jpg" alt="Renovation Work"
+          class="w-full h-80 object-cover transform transition-transform duration-300 ease-in-out hover:scale-105">
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <img src="assets/interior design.webp" alt="Interior Design"
+          class="w-full h-80 object-cover transform transition-transform duration-300 ease-in-out hover:scale-105">
+      </div>
+    </div>
+
+
+    <!-- Services Info Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
+
+      <!-- Kitchen Renovation -->
+      <div class="flex flex-col lg:flex-row gap-6 items-start" data-aos="fade-right">
+        <i class="fas fa-kitchen service-icon glow float text-4xl text-[#C85716]"></i>
+        <div>
+          <h3 class="text-2xl font-semibold text-[#C85716]">Kitchen Renovation</h3>
+          <p class="text-gray-300 leading-relaxed">
+            Full kitchen renovation services including cabinet door PVC wraps, marble countertop changes, ceiling
+            upgrades, and cabinet maintenance to refresh your cooking space.
+          </p>
+        </div>
+      </div>
+
+      <!-- Toilet Renovation -->
+      <div class="flex flex-col lg:flex-row gap-6 items-start" data-aos="fade-left">
+        <i class="fas fa-bath service-icon glow float text-4xl text-[#C85716]"></i>
+        <div>
+          <h3 class="text-2xl font-semibold text-[#C85716]">Toilet Renovation</h3>
+          <p class="text-gray-300 leading-relaxed">
+            Complete toilet makeover including bath tub removal & glass installation, wash basin cabinet replacement,
+            marble top updates, and ceiling replacement.
+          </p>
+        </div>
+      </div>
+
+      <!-- Villa Renovation -->
+      <div class="flex flex-col lg:flex-row gap-6 items-start" data-aos="fade-right">
+        <i class="fas fa-home service-icon glow float text-4xl text-[#C85716]"></i>
+        <div>
+          <h3 class="text-2xl font-semibold text-[#C85716]">Villa Renovation</h3>
+          <p class="text-gray-300 leading-relaxed">
+            Full villa renovation and interior makeover with modern designs, quality finishes, and customized solutions
+            to match your style and preferences.
+          </p>
+        </div>
+      </div>
+
+      <!-- Swimming Pool Work -->
+      <div class="flex flex-col lg:flex-row gap-6 items-start" data-aos="fade-left">
+        <i class="fas fa-swimming-pool service-icon glow float text-4xl text-[#C85716]"></i>
+        <div>
+          <h3 class="text-2xl font-semibold text-[#C85716]">Swimming Pool Work</h3>
+          <p class="text-gray-300 leading-relaxed">
+            Swimming pool design, construction, maintenance, waterproofing, and finishing work with luxury and
+            durability in mind.
+          </p>
+        </div>
+      </div>
+
+      <!-- Customized Solutions -->
+      <div class="flex flex-col lg:flex-row gap-6 items-start md:col-span-2" data-aos="fade-up">
+        <i class="fas fa-cogs service-icon glow float text-4xl text-[#C85716]"></i>
+        <div>
+          <h3 class="text-2xl font-semibold text-[#C85716]">Customized Solutions</h3>
+          <p class="text-gray-300 leading-relaxed">
+            Tailored renovation solutions for unique requirements. Innovative designs, premium materials, and practical
+            solutions ensure your dream project comes to life.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Extra Info Section -->
+    <div class="space-y-8" data-aos="fade-up">
+      <h2 class="text-3xl lg:text-4xl font-bold text-white text-center lg:text-left">Why Choose SMB Renovation?</h2>
+      <ul class="list-disc list-inside space-y-3 text-gray-300">
+        <li>Professional, experienced team for every type of renovation.</li>
+        <li>Modern designs with durable, premium materials.</li>
+        <li>Customized solutions to match your style and space.</li>
+        <li>Efficient project management and timely delivery.</li>
+        <li>Transparent pricing, no hidden costs.</li>
+        <li>Expert advice for maintaining and upgrading your spaces.</li>
+      </ul>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="content-start mt-16" data-aos="zoom-in">
+      <a href="index.html#contact"
+        class="inline-flex items-start px-8 py-4 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-300 ease-in-out">
+        Contact Us for More Details
+        <i
+          class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-1"></i>
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- Footer Section -->
+  <footer class="bg-[#00060a] text-gray-300 pt-20 pb-6" data-aos="fade-up" data-aos-duration="1000">
+    <div
+      class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:gap-8 xl:gap-8 2xl:gap-8 items-start">
+
+      <!-- Logo + Renovation + Description -->
+      <div class="flex flex-col gap-1" data-aos="fade-up" data-aos-duration="1200">
+        <div class="flex items-center gap-0">
+          <img src="assets/logo.png" alt="SMB Renovation Logo" class="w-15">
+          <span class="text-[#C85716] font-bold text-3xl mt-2">Renovation</span>
+        </div>
+        <p class="text-gray-400 text-sm max-w-xs md:mb-0 mb-3">
+          Transforming your spaces with modern design, quality, and durability. Your trusted partner in renovations.
+        </p>
+      </div>
+
+      <!-- Links & Services Columns -->
+      <div class="flex flex-col gap-6 md:flex-row md:justify-start lg:-ml-40">
+
+        <!-- Quick Links -->
+        <div class="flex flex-col gap-2" data-aos="fade-up" data-aos-duration="1400">
+          <h3 class="text-white font-semibold mb-2 lg:mr-24">Quick Links</h3>
+          <a href="index.html#home" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Home</a>
+          <a href="index.html#about"
+            class="hover:text-[#C85716] hover:underline transition-colors duration-200">About</a>
+          <a href="index.html#services"
+            class="hover:text-[#C85716] hover:underline transition-colors duration-200">Services</a>
+          <a href="index.html#gallery"
+            class="hover:text-[#C85716] hover:underline transition-colors duration-200">Gallery</a>
+          <a href="index.html#contact"
+            class="hover:text-[#C85716] hover:underline transition-colors duration-200">Contact Us</a>
+        </div>
+
+        <!-- Our Services Split in Two Columns -->
+        <div class="flex gap-8" data-aos="fade-up" data-aos-duration="1600">
+          <!-- Column 1 -->
+          <div class="flex flex-col gap-2">
+            <h3 class="text-white font-semibold mb-2 lg:mr-44">Our Services</h3>
+            <a href="index.html#ac" class="hover:text-[#C85716] hover:underline transition-colors duration-200">AC
+              Maintenance & Installation</a>
+            <a href="index.html#glass" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Glass
+              & Gypsum Partition</a>
+            <a href="index.html#paint"
+              class="hover:text-[#C85716] hover:underline transition-colors duration-200">Internal & External Paint</a>
+            <a href="index.html#tiles" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Floor
+              & Wall Tile Work</a>
+            <a href="index.html#pvc" class="hover:text-[#C85716] hover:underline transition-colors duration-200">PVC
+              Flooring</a>
+            <a href="index.html#plumbing"
+              class="hover:text-[#C85716] hover:underline transition-colors duration-200">Plumbing Work</a>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="flex flex-col gap-2 mt-6 md:mt-0 lg:mt-10">
+            <a href="index.html#electrical"
+              class="hover:text-[#C85716] hover:underline transition-colors duration-200">Electrical Work</a>
+            <a href="index.html#garden"
+              class="hover:text-[#C85716] hover:underline transition-colors duration-200">Garden Pergola Work</a>
+            <a href="index.html#water" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Water
+              Tank Cleaning</a>
+            <a href="index.html#roof" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Roof
+              Waterproofing</a>
+            <a href="index.html#pool"
+              class="hover:text-[#C85716] hover:underline transition-colors duration-200">Swimming Pool</a>
+            <a href="index.html#custom"
+              class="hover:text-[#C85716] hover:underline transition-colors duration-200">Customized Work</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-500 text-sm" data-aos="fade-up"
+      data-aos-duration="1000">
+      &copy; 2025 <span class="text-white">SMB</span><span class="text-[#C85716]">Renovation.</span> All rights
+      reserved.
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // up down arrow
+    const scrollBtn = document.getElementById("scrollBtn");
+    const scrollIcon = document.getElementById("scrollIcon");
+
+    function scrollToPosition(target) {
+      const start = window.scrollY;
+      const distance = target - start;
+      const duration = 200; // ms
+      let startTime = null;
+
+      function animation(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+        window.scrollTo(0, start + distance * progress);
+        if (progress < 1) requestAnimationFrame(animation);
+      }
+
+      requestAnimationFrame(animation);
+    }
+
+    function updateButton() {
+      const scrollTop = window.scrollY;
+      const scrollHeight = document.documentElement.scrollHeight; // ✅ safe option
+      const clientHeight = window.innerHeight; // ✅ mobile safe
+
+      if (scrollTop + clientHeight >= scrollHeight - 5) {
+        // bottom reached → arrow up
+        scrollIcon.classList.remove("fa-arrow-down");
+        scrollIcon.classList.add("fa-arrow-up");
+        scrollBtn.onclick = () => scrollToPosition(0);
+      } else if (scrollTop <= 0) {
+        // top reached → arrow down
+        scrollIcon.classList.remove("fa-arrow-up");
+        scrollIcon.classList.add("fa-arrow-down");
+        scrollBtn.onclick = () => scrollToPosition(scrollHeight);
+      }
+    }
+
+    // 👇 scroll resize and listen to mobile 
+    window.addEventListener("scroll", updateButton);
+    window.addEventListener("resize", updateButton);
+    updateButton();
+  </script>
+
+</body>
+
+</html>
