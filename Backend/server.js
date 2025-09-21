@@ -18,8 +18,8 @@ app.post('/send', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'add you gmail', // Your Gmail
-      pass: 'add your app password'             // Gmail App Password
+      user: process.env.EMAIL_USER, // Your Gmail
+      pass: process.env.EMAIL_PASS             // Gmail App Password
     }
   });
 
@@ -36,9 +36,9 @@ ${message}
 
   // Mail options
   const mailOptions = {
-    from: 'add your gmail',        // Must be your Gmail
+    from: process.env.EMAIL_USER,        // Must be your Gmail
     replyTo: email,                                 // Reply goes to user
-    to: 'again add your gmail',          // Receive email here
+    to: process.env.EMAIL_USER,          // Receive email here
     subject: `${subject} - Message from ${name} (${email})`, // User name + email in subject
     text: fullMessage
   };
