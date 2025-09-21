@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SMB | Technical Service L.L.C</title>
+  <title>Go Home | Technical Service L.L.C</title>
   <!-- Favicon -->
   <link rel="icon" href="assets/logo.PNG" type="image/png">
   <!-- Custom CSS -->
@@ -15,671 +16,897 @@
   <!-- Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Glide.js -->
+  <!-- Glide.js -->/
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<body class="bg-[#010a0e] font-sans" >
 
-    <!-- Scroll Button --> <button id="scrollBtn"
-        class="fixed bottom-6 left-6 w-12 h-12 flex items-center justify-center shadow-2xl rounded-lg bg-[#C85716] text-white shadow-[#e25b0c] hover:bg-[#b14e14] transform hover:-translate-y-1 transition duration-300 z-50">
-        <i id="scrollIcon" class="fa-solid fa-arrow-down"></i> </button>
+<body class="bg-[#010a0e] font-sans">
 
-<!-- Header -->
-<header data-aos="fade-down" class="fixed top-0 w-full bg-[#010a0e]/70 shadow-md z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center py-3">
+  <!-- Scroll Button --> <button id="scrollBtn"
+    class="fixed bottom-6 left-6 w-12 h-12 flex items-center justify-center shadow-2xl rounded-lg bg-[#C85716] text-white shadow-[#e25b0c] hover:bg-[#b14e14] transform hover:-translate-y-1 transition duration-300 z-50">
+    <i id="scrollIcon" class="fa-solid fa-arrow-down"></i> </button>
 
-      <!-- Logo -->
-      <a href="index.html" class="flex items-center space-x-2" data-aos="fade-right" data-aos-delay="100">
-        <img src="assets/logo.PNG" alt="SMB Logo" class="h-20">
-      </a>
+  <!-- Header -->
+  <header data-aos="fade-down" class="fixed top-0 w-full bg-[#010a0e]/70 shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-3 px-3">
 
-      <!-- Contact Icons (Desktop) -->
-      <div class="hidden sm:flex items-center gap-10 text-gray-300" data-aos="fade-down" data-aos-delay="200">
-        <!-- Bilal -->
-        <a href="https://wa.me/971500000000" target="_blank"
-          class="flex items-center space-x-2 hover:text-[#C85716] transition-all duration-200 ease-in">
-          <i class="fa-brands fa-whatsapp text-xl"></i>
-          <span>M. Bilal: +971 54 7057716</span>
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2" data-aos="fade-right" data-aos-delay="100">
+          <img src="assets/logo.PNG" alt="SMB Logo" class="h-20">
         </a>
-        <!-- Qadir -->
-        <a href="https://wa.me/971520000000" target="_blank"
-          class="flex items-center space-x-2 hover:text-[#C85716] transition-all duration-200 ease-in">
-          <i class="fa-brands fa-whatsapp text-xl"></i>
-          <span>Qadir: +971 50 9200192</span>
+
+        <!-- Contact Icons (Desktop) -->
+        <div class="hidden sm:flex items-center gap-10 text-gray-300" data-aos="fade-down" data-aos-delay="200">
+          <!-- Bilal -->
+          <a href="https://wa.me/971500000000" target="_blank"
+            class="flex items-center space-x-2 hover:text-[#C85716] transition-all duration-200 ease-in">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span>M. Bilal: +971 54 7057716</span>
+          </a>
+          <!-- Qadir -->
+          <a href="https://wa.me/971520000000" target="_blank"
+            class="flex items-center space-x-2 hover:text-[#C85716] transition-all duration-200 ease-in">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span>Qadir: +971 50 9200192</span>
+          </a>
+          <!-- Email -->
+          <a href="mailto:smbtechnical3@gmail.com"
+            class="flex items-center space-x-2 hover:text-[#C85716] transition-all duration-200 ease-in">
+            <i class="fa-solid fa-envelope text-xl"></i>
+            <span>gohometechnical3@gmail.com</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-2xl text-gray-300 focus:outline-none" data-aos="fade-left"
+          data-aos-delay="300">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation (Desktop + Mobile) -->
+    <nav id="menu" class="hidden grid md:flex md:flex-row text-center md:justify-center md:gap-10 
+         bg-[#010a0e]/50 px-4 md:px-0 py-2 sm:py-6 text-white relative z-20" data-aos="fade-down" data-aos-delay="400">
+
+      <!-- Links -->
+      <a href="#home" class="py-2 md:py-0 hover:text-[#C85716] transition-all duration-200 ease-in">Home</a>
+      <a href="#about" class="py-2 md:py-0 hover:text-[#C85716] transition-all duration-200 ease-in">About</a>
+      <a href="#services" class="py-2 md:py-0 hover:text-[#C85716] transition-all duration-200 ease-in">Services</a>
+      <a href="#gallery" class="py-2 md:py-0 hover:text-[#C85716] transition-all duration-200 ease-in">Gallery</a>
+      <a href="#contact" class="py-2 md:py-0 hover:text-[#C85716] transition-all duration-200 ease-in">Contact</a>
+    </nav>
+
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="relative min-h-screen flex items-center justify-center text-center px-6">
+    <!-- Background image -->
+    <div class="absolute inset-0 top-0">
+      <img src="assets/hero.jpeg" alt="Hero Background" class="w-full h-full object-cover top-0">
+      <!-- Dark overlay -->
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-3xl text-white space-y-6 lg:mt-30">
+      <!-- Heading -->
+      <h1 data-aos="fade-up" class="text-3xl sm:text-4xl lg:text-5xl font-bold">
+        Transform Your Home With Go Home Maintaince and renovation
+      </h1>
+
+      <!-- Paragraph -->
+      <p data-aos="fade-up" data-aos-delay="150" class="text-base sm:text-lg lg:text-xl text-gray-300">
+        We provide expert renovation, maintenance & technical services to make your spaces modern, durable, and
+        beautiful.
+      </p>
+
+      <!-- Buttons -->
+      <div data-aos="fade-up" data-aos-delay="300" class="flex flex-row items-center justify-center gap-4">
+        <a href="#contact"
+          class="px-8 py-3.5 bg-[#C85716] text-white font-semibold rounded-full shadow-lg hover:bg-[#a84610] transition-all duration-200 ease-in hover:-translate-y-0.5">
+          Contact Us
         </a>
-        <!-- Email -->
-        <a href="mailto:smbtechnical3@gmail.com"
-          class="flex items-center space-x-2 hover:text-[#C85716] transition-all duration-200 ease-in">
-          <i class="fa-solid fa-envelope text-xl"></i>
-          <span>smbtechnical3@gmail.com</span>
+        <a href="#services"
+          class="px-7 py-3 bg-transparent text-white font-bold rounded-full border-2 shadow-lg hover:border-[#C85716] hover:text-[#C85716] transition-all duration-200 ease-in hover:-translate-y-0.5">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="relative min-h-screen flex items-center py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-20">
+
+      <!-- Left Content -->
+      <div class="flex-1 space-y-6" data-aos="fade-right">
+        <h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold text-white">
+          About Go Home Maintenance and Renovation
+        </h2>
+        <p class="text-gray-300 text-base sm:text-lg xl:text-xl leading-relaxed">
+          At <span class="font-semibold text-[#C85716]">Go Home Maintenance and Renovation Services L.L.C</span>,
+          we specialize in transforming kitchens, bathrooms, pools, interiors, and exteriors.
+          With our expert team, we ensure durability, quality, and modern design in every project.
+          From small repairs to full renovations, we are your trusted partner for home and commercial spaces.
+        </p>
+
+        <!-- Button with Arrow -->
+        <a href="detail.html"
+          class="group inline-flex items-center px-7 py-3 xl:px-8 xl:py-4 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
+          data-aos="fade-up" data-aos-delay="200">
+          <span>Learn More</span>
+          <i
+            class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-1"></i>
         </a>
       </div>
 
-      <!-- Mobile Menu Button -->
-      <button id="menu-btn" class="md:hidden text-2xl text-gray-300 focus:outline-none" data-aos="fade-left" data-aos-delay="300">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </div>
-  </div>
+      <!-- Right Image with Decorative Circles -->
+      <div class="relative flex-1 flex justify-center items-center" data-aos="fade-left">
+        <!-- Decorative circle top-left -->
+        <div class="absolute -top-6 -left-6 w-28 h-28 bg-[#C85716]/40 rounded-full blur-2xl"></div>
+        <!-- Decorative circle bottom-right -->
+        <div class="absolute -bottom-6 -right-6 w-36 h-36 bg-[#C85716]/40 rounded-full blur-2xl"></div>
 
-<!-- Navigation (Desktop + Mobile) -->
-<nav id="menu"
-  class="hidden grid md:flex md:flex-row text-center md:justify-center md:gap-10 
-         bg-[#010a0e]/50 px-4 md:px-0 py-2 sm:py-6 text-white relative z-20"
-  data-aos="fade-down" data-aos-delay="400">
-
-  <!-- Links -->
-  <a href="#home" class="py-2 md:py-0 hover:text-[#C85716] transition-all duration-200 ease-in">Home</a>
-  <a href="#about" class="py-2 md:py-0 hover:text-[#C85716] transition-all duration-200 ease-in">About</a>
-  <a href="#services" class="py-2 md:py-0 hover:text-[#C85716] transition-all duration-200 ease-in">Services</a>
-  <a href="#gallery" class="py-2 md:py-0 hover:text-[#C85716] transition-all duration-200 ease-in">Gallery</a>
-  <a href="#contact" class="py-2 md:py-0 hover:text-[#C85716] transition-all duration-200 ease-in">Contact</a>
-</nav>
-
-</header>
-
-
-
-<!-- Home Section -->
-<section id="home" class="relative min-h-screen flex items-center justify-center text-center px-6">
-  <!-- Background image -->
-  <div class="absolute inset-0">
-    <img src="assets/hero.jpeg" alt="Hero Background" class="w-full h-full object-cover">
-    <!-- Dark overlay -->
-    <div class="absolute inset-0 bg-black/60"></div>
-  </div>
-
-  <!-- Hero Content -->
-  <div class="relative z-10 max-w-3xl text-white space-y-6 lg:mt-30">
-    <!-- Heading -->
-    <h1 data-aos="fade-up" class="text-3xl sm:text-4xl lg:text-5xl font-bold">
-      Transform Your Home With SMB Renovation
-    </h1>
-
-    <!-- Paragraph -->
-    <p data-aos="fade-up" data-aos-delay="150"
-       class="text-base sm:text-lg lg:text-xl text-gray-300">
-      We provide expert renovation, maintenance & technical services to make your spaces modern, durable, and beautiful.
-    </p>
-
-    <!-- Buttons -->
-    <div data-aos="fade-up" data-aos-delay="300"
-         class="flex flex-row items-center justify-center gap-4">
-      <a href="#contact"
-         class="px-8 py-3.5 bg-[#C85716] text-white font-semibold rounded-full shadow-lg hover:bg-[#a84610] transition-all duration-200 ease-in hover:-translate-y-0.5">
-        Contact Us
-      </a>
-      <a href="#services"
-         class="px-7 py-3 bg-transparent text-white font-bold rounded-full border-2 shadow-lg hover:border-[#C85716] hover:text-[#C85716] transition-all duration-200 ease-in hover:-translate-y-0.5">
-        Learn More
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<!-- About Section -->
-<section id="about" class="relative min-h-screen flex items-center py-20 lg:py-28">
-  <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-20">
-    
-    <!-- Left Content -->
-    <div class="flex-1 space-y-6" data-aos="fade-right">
-      <h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold text-white">
-        About SMB Renovation
-      </h2>
-      <p class="text-gray-300 text-base sm:text-lg xl:text-xl leading-relaxed">
-        At <span class="font-semibold text-[#C85716]">SMB Technical Maintenance & Renovation Services L.L.C</span>, 
-        we specialize in transforming kitchens, bathrooms, pools, interiors, and exteriors. 
-        With our expert team, we ensure durability, quality, and modern design in every project.  
-        From small repairs to full renovations, we are your trusted partner for home and commercial spaces.
-      </p>
-
-      <!-- Button with Arrow -->
-      <a href="detail.html"
-        class="group inline-flex items-center px-7 py-3 xl:px-8 xl:py-4 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
-        data-aos="fade-up" data-aos-delay="200">
-        <span>Learn More</span>
-        <i class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-1"></i>
-      </a>
-    </div>
-
-    <!-- Right Image with Decorative Circles -->
-    <div class="relative flex-1 flex justify-center items-center" data-aos="fade-left">
-      <!-- Decorative circle top-left -->
-      <div class="absolute -top-6 -left-6 w-28 h-28 bg-[#C85716]/40 rounded-full blur-2xl"></div>
-      <!-- Decorative circle bottom-right -->
-      <div class="absolute -bottom-6 -right-6 w-36 h-36 bg-[#C85716]/40 rounded-full blur-2xl"></div>
-
-      <!-- Image -->
-      <img src="assets/about.jpg" alt="About SMB Renovation"
-        class="relative rounded-2xl shadow-lg w-full max-w-md xl:max-w-lg 2xl:max-w-2xl object-cover hover:scale-[1.02] transition-all duration-300 ease-in-out">
-    </div>
-  </div>
-</section>
-
-
-<!-- Services section -->
-<section id="services" class="py-20">
-  <div class="max-w-7xl mx-auto px-6 lg:px-0">
-    <!-- Section Heading -->
-    <div class="text-center mb-16" data-aos="fade-up">
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-        Our <strong class="text-[#C85716]">Services</strong>
-      </h2>
-      <p class="mt-4 text-gray-300 text-base sm:text-lg max-w-2xl mx-auto">
-        At SMB Technical Maintenance & Renovation Services L.L.C, we provide a wide range of high-quality services to make your spaces modern, durable, and beautiful.
-      </p>
-    </div>
-
-<!-- Services Grid -->
-<div class="grid gap-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 justify-items-center">
-
-<!-- Outer Wrapper for AOS -->
-<div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
-  <div id="ac" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
-              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
-    <img src="assets/ac.png" alt="AC Maintenance & Installation" class="w-full h-56 xl:h-72 2xl:h-80 object-cover ">
-    
-    <div class="p-6 space-y-3">
-      <h3 class="text-2xl font-bold text-white">AC Maintenance & Installation</h3>
-      <div class="flex gap-2 flex-wrap">
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Cooling</span>
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Comfort</span>
+        <!-- Image -->
+        <img src="assets/about.jpg" alt="About SMB Renovation"
+          class="relative rounded-2xl shadow-lg w-full max-w-md xl:max-w-lg 2xl:max-w-2xl object-cover hover:scale-[1.02] transition-all duration-300 ease-in-out">
       </div>
-      <p class="text-gray-300 text-base leading-relaxed">
-        Stay cool with our expert AC repair, servicing, and installation. We ensure your cooling systems work efficiently all year round.
-      </p>
-      <a href="detail.html"
-         class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
-         data-aos="fade-up">
-        <span>Learn More</span>
-        <i class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
-      </a>
     </div>
-    
-  </div>
-</div>
+  </section>
 
-
-  <!-- 2 Glass & Gypsum Partition -->
-<div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
-  <div id="glass" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
-              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
-    <img src="assets/glass.jpg" alt="Glass & Gypsum Partition" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
-    <div class="p-6 space-y-3">
-      <h3 class="text-2xl font-bold text-white">Glass & Gypsum Partition</h3>
-      <div class="flex gap-2 flex-wrap">
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Modern</span>
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Elegant</span>
-      </div>
-      <p class="text-gray-300 text-base leading-relaxed">
-        Create stylish and functional spaces with our expert glass and gypsum partition services, perfect for offices and homes.
-      </p>
-                    <a href="detail.html"
-        class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
-        data-aos="fade-up">
-        <span>Learn More</span>
-        <i class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-  <!-- 3 Internal & External Paint -->
-<div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
-  <div id="paint" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
-              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
-    <img src="assets/paint.jpg" alt="Internal & External Paint" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
-    <div class="p-6 space-y-3">
-      <h3 class="text-2xl font-bold text-white">Internal & External Paint</h3>
-      <div class="flex gap-2 flex-wrap">
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Vibrant</span>
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Smooth</span>
-      </div>
-      <p class="text-gray-300 text-base leading-relaxed">
-        Enhance your property with our professional interior and exterior painting services that provide long-lasting beauty.
-      </p>
-                    <a href="detail.html"
-        class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
-        data-aos="fade-up">
-        <span>Learn More</span>
-        <i class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-  <!-- 4 Floor & Wall Tile Work -->
-<div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
-  <div id="tiles" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
-              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
-    <img src="assets/tiles.jpg" alt="Floor & Wall Tile Work" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
-    <div class="p-6 space-y-3">
-      <h3 class="text-2xl font-bold text-white">Floor & Wall Tile Work</h3>
-      <div class="flex gap-2 flex-wrap">
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Durable</span>
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Stylish</span>
-      </div>
-      <p class="text-gray-300 text-base leading-relaxed">
-        Premium tile installation for floors and walls, delivering strength and elegant finishes to your spaces.
-      </p>
-                    <a href="detail.html"
-        class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
-        data-aos="fade-up">
-        <span>Learn More</span>
-        <i class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-  <!-- 5 PVC Flooring -->
-<div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
-  <div id="pvc" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
-              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
-    <img src="assets/pvc.webp" alt="PVC Flooring" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
-    <div class="p-6 space-y-3">
-      <h3 class="text-2xl font-bold text-white">PVC Flooring</h3>
-      <div class="flex gap-2 flex-wrap">
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Modern</span>
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Durable</span>
-      </div>
-      <p class="text-gray-300 text-base leading-relaxed">
-        Affordable and stylish PVC flooring solutions that are long-lasting, waterproof, and easy to maintain.
-      </p>
-                    <a href="detail.html"
-        class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
-        data-aos="fade-up">
-        <span>Learn More</span>
-        <i class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-  <!-- 6 Plumbing Work -->
-<div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
-  <div id="plumbing" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
-              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
-    <img src="assets/plumbing.jpg" alt="Plumbing Work" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
-    <div class="p-6 space-y-3">
-      <h3 class="text-2xl font-bold text-white">Plumbing Work</h3>
-      <div class="flex gap-2 flex-wrap">
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Leak-Free</span>
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Efficient</span>
-      </div>
-      <p class="text-gray-300 text-base leading-relaxed">
-        Expert plumbing installations and repairs to keep your water systems reliable and efficient.
-      </p>
-                    <a href="detail.html"
-        class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
-        data-aos="fade-up">
-        <span>Learn More</span>
-        <i class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-  <!-- 7 Electrical Work -->
-<div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
-  <div id="electrical" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
-              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
-    <img src="assets/electrical.jpeg" alt="Electrical Work" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
-    <div class="p-6 space-y-3">
-      <h3 class="text-2xl font-bold text-white">Electrical Work</h3>
-      <div class="flex gap-2 flex-wrap">
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Safe</span>
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Reliable</span>
-      </div>
-      <p class="text-gray-300 text-base leading-relaxed">
-        From wiring to lighting, we provide professional electrical services ensuring safety and efficiency.
-      </p>
-                    <a href="detail.html"
-        class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
-        data-aos="fade-up">
-        <span>Learn More</span>
-        <i class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-  <!-- 8 Garden Pergola Work -->
-<div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
-  <div id="garden" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
-              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
-    <img src="assets/garden.jpg" alt="Garden Pergola Work" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
-    <div class="p-6 space-y-3">
-      <h3 class="text-2xl font-bold text-white">Garden Pergola Work</h3>
-      <div class="flex gap-2 flex-wrap">
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Elegant</span>
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Durable</span>
-      </div>
-      <p class="text-gray-300 text-base leading-relaxed">
-        Beautify your garden with custom-designed pergolas that provide shade and enhance outdoor living.
-      </p>
-                    <a href="detail.html"
-        class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
-        data-aos="fade-up">
-        <span>Learn More</span>
-        <i class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-  <!-- 9 Water Tank Cleaning -->
-<div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
-  <div id="water" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
-              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
-    <img src="assets/watertank.jpg" alt="Water Tank Cleaning" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
-    <div class="p-6 space-y-3">
-      <h3 class="text-2xl font-bold text-white">Water Tank Cleaning</h3>
-      <div class="flex gap-2 flex-wrap">
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Hygienic</span>
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Safe</span>
-      </div>
-      <p class="text-gray-300 text-base leading-relaxed">
-        Ensure clean and safe water supply with our professional water tank cleaning services.
-      </p>
-                    <a href="detail.html"
-        class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
-        data-aos="fade-up">
-        <span>Learn More</span>
-        <i class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-  <!-- 10 Roof Waterproofing -->
-<div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
-  <div id="roof" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
-              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
-    <img src="assets/roof.webp" alt="Roof Waterproofing" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
-    <div class="p-6 space-y-3">
-      <h3 class="text-2xl font-bold text-white">Roof Waterproofing</h3>
-      <div class="flex gap-2 flex-wrap">
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Protective</span>
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Reliable</span>
-      </div>
-      <p class="text-gray-300 text-base leading-relaxed">
-        Prevent leaks and water damage with our long-lasting waterproofing solutions.
-      </p>
-                    <a href="detail.html"
-        class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
-        data-aos="fade-up">
-        <span>Learn More</span>
-        <i class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-  <!-- 11 Swimming Pool -->
-<div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
-  <div id="pool" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
-              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
-    <img src="assets/swimming.webp" alt="Swimming Pool" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
-    <div class="p-6 space-y-3">
-      <h3 class="text-2xl font-bold text-white">Swimming Pool</h3>
-      <div class="flex gap-2 flex-wrap">
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Luxury</span>
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Relax</span>
-      </div>
-      <p class="text-gray-300 text-base leading-relaxed">
-        We build, renovate, and maintain swimming pools that combine relaxation with style and durability.
-      </p>
-                    <a href="detail.html"
-        class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
-        data-aos="fade-up">
-        <span>Learn More</span>
-        <i class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-  <!-- 12 Customized Work -->
-<div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
-  <div id="custom" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
-              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
-    <img src="assets/customize.jpg" alt="Customized Work" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
-    <div class="p-6 space-y-3">
-      <h3 class="text-2xl font-bold text-white">Customized Work</h3>
-      <div class="flex gap-2 flex-wrap">
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Flexible</span>
-        <span class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Quality</span>
-      </div>
-      <p class="text-gray-300 text-base leading-relaxed">
-        Any special renovation or maintenance task tailored to your specific requirements with high-quality execution.
-      </p>
-                    <a href="detail.html"
-        class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
-        data-aos="fade-up">
-        <span>Learn More</span>
-        <i class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
-      </a>
-    </div>
-  </div>
-
-</div>
-</div>
-
-  </div>
-</section>
-
-
-<!-- Gallery Section -->
-<section id="gallery" class="relative py-16">
-  <div class="max-w-7xl mx-auto px-6 lg:px-12">
-    
-    <!-- Section Heading -->
-    <div class="text-center mb-12" data-aos="fade-up">
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-        Our Project <span class="text-[#C85716]">Gallery</span>
-      </h2>
-      <p class="mt-4 text-gray-300 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto">
-        Explore our latest renovation and maintenance works from modern kitchens 
-        to luxury bathrooms, interiors, exteriors, and pools. Quality and design you can trust.
+  <!-- main Services -->
+  <section id="services" class="py-20 px-6 lg:px-20">
+    <div class="container mx-auto space-y-6 text-center">
+      <!-- Section Title -->
+      <h1 class="text-4xl font-bold text-white mb-2" data-aos="fade-down">Main <span
+          class="font-bold text-[#C85716]">Services</span></h1>
+      <p class="text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        We offer professional renovation services to transform your spaces into modern, functional, and stylish areas.
+        From kitchens to bathrooms to pools, our expert team ensures top-notch quality and durability.
       </p>
     </div>
 
-    <!-- Gallery Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+    <div class="container mx-auto space-y-20 mt-12">
 
-      <!-- Gallery Item -->
-      <div class="relative group overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in">
-        <img src="assets/kitchen.jpg" alt="Kitchen Renovation"
-          class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
-        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-          <h3 class="text-white text-lg font-semibold">Kitchen Renovation</h3>
+      <!-- Kitchen Renovation -->
+      <div class="grid lg:grid-cols-2 gap-10 items-center" id="#kitchenrenovation">
+        <!-- Video Left -->
+        <div
+          class="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-lg mx-auto 
+                  max-w-[260px] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[350px] xl:max-w-[400px] border-b-4 border-[#c857163d]"
+          data-aos="fade-right" data-aos-delay="100">
+          <video class="w-full h-full object-cover rounded-2xl" preload="metadata">
+            <source src="assets/kitchen.mp4" type="video/mp4">
+          </video>
+          <!-- Play Button -->
+          <button class="absolute inset-0 flex items-center justify-center play-btn">
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-[#C85716] flex items-center justify-center shadow-lg hover:scale-110 transition">
+              <i class="fa-solid fa-play text-white text-xl md:text-2xl ml-1"></i>
+            </div>
+          </button>
+        </div>
+        <!-- Content Right -->
+        <div class="text-white space-y-4" data-aos="fade-left" data-aos-delay="200">
+          <h2 class="text-3xl font-bold text-[#C85716] w-96 bg-[#c857161f] px-6 py-2 rounded-full text-center">Kitchen
+            Renovation</h2>
+          <p class="text-gray-300">We provide full kitchen renovation solutions to modernize and upgrade your home with
+            high-quality materials and stylish finishes.</p>
+          <ul
+            class="space-y-2 text-gray-300 group hover:translate-x-0.5 hover:text-white transition-all duration-300 ease">
+            <li class="flex items-center gap-2"><i
+                class="fa-solid fa-kitchen-set text-[#C85716] bg-transparent p-3 group-hover:bg-[#C85716] group-hover:text-white transition-all duration-200 ease rounded-full cursor-pointer"></i>
+              Full Kitchen Renovation</li>
+            <li class="flex items-center gap-2"><i
+                class="fa-solid fa-door-closed text-[#C85716] bg-transparent p-3 group-hover:bg-[#C85716] group-hover:text-white transition-all duration-200 ease rounded-full cursor-pointer"></i>
+              Cabinet Door PVC Wrap</li>
+            <li class="flex items-center gap-2"><i
+                class="fa-solid fa-table text-[#C85716] bg-transparent p-3 group-hover:bg-[#C85716] group-hover:text-white transition-all duration-200 ease rounded-full cursor-pointer"></i>
+              Counter Marble Top Change</li>
+            <li class="flex items-center gap-2"><i
+                class="fa-solid fa-screwdriver-wrench text-[#C85716] bg-transparent p-3 group-hover:bg-[#C85716] group-hover:text-white transition-all duration-200 ease rounded-full cursor-pointer"></i>
+              Cabinet Maintenance</li>
+            <li class="flex items-center gap-2"><i
+                class="fa-solid fa-layer-group text-[#C85716] bg-transparent p-3 group-hover:bg-[#C85716] group-hover:text-white transition-all duration-200 ease rounded-full cursor-pointer"></i>
+              Kitchen Ceiling Change</li>
+          </ul>
         </div>
       </div>
 
-      <!-- Gallery Item -->
-      <div class="relative group overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
-        <img src="assets/bathroom.webp" alt="Bathroom Design"
-          class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
-        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-          <h3 class="text-white text-lg font-semibold">Bathroom Upgrade</h3>
+      <!-- Toilet Renovation -->
+      <div class="grid lg:grid-cols-2 gap-10 items-center" id="toiletrenovation">
+        <!-- Content Left -->
+        <div class="text-white space-y-4 order-2 lg:order-1" data-aos="fade-right" data-aos-delay="100">
+          <h2 class="text-3xl font-bold text-[#C85716] w-96 bg-[#c857161f] px-6 py-2 rounded-full text-center">Toilet
+            Renovation</h2>
+          <p class="text-gray-300">Upgrade your bathroom into a modern and relaxing space with our professional toilet
+            renovation services.</p>
+          <ul
+            class="space-y-2 text-gray-300 group hover:translate-x-0.5 hover:text-white transition-all duration-300 ease">
+            <li class="flex items-center gap-2"><i
+                class="fa-solid fa-toilet text-[#C85716] bg-transparent p-3 group-hover:bg-[#C85716] group-hover:text-white transition-all duration-200 ease rounded-full cursor-pointer"></i>
+              Full Toilet Renovation</li>
+            <li class="flex items-center gap-2"><i
+                class="fa-solid fa-bath text-[#C85716] bg-transparent p-3 group-hover:bg-[#C85716] group-hover:text-white transition-all duration-200 ease rounded-full cursor-pointer"></i>
+              Remove Bathtub & Fix Glass</li>
+            <li class="flex items-center gap-2"><i
+                class="fa-solid fa-sink text-[#C85716] bg-transparent p-3 group-hover:bg-[#C85716] group-hover:text-white transition-all duration-200 ease rounded-full cursor-pointer"></i>
+              Replace Wash Basin Cabinet & Marble Top</li>
+            <li class="flex items-center gap-2"><i
+                class="fa-solid fa-layer-group text-[#C85716] bg-transparent p-3 group-hover:bg-[#C85716] group-hover:text-white transition-all duration-200 ease rounded-full cursor-pointer"></i>
+              Toilet Ceiling Replace</li>
+          </ul>
+        </div>
+        <!-- Video Right -->
+        <div class="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-lg mx-auto 
+                  max-w-[260px] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[350px] xl:max-w-[400px]
+                  order-1 lg:order-2 border-b-4 border-[#c857163d]" data-aos="fade-left" data-aos-delay="200">
+          <video class="w-full h-full object-cover rounded-2xl" preload="metadata">
+            <source src="assets/bathroom.mp4" type="video/mp4">
+          </video>
+          <!-- Play Button -->
+          <button class="absolute inset-0 flex items-center justify-center play-btn">
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-[#C85716] flex items-center justify-center shadow-lg hover:scale-110 transition">
+              <i class="fa-solid fa-play text-white text-xl md:text-2xl ml-1"></i>
+            </div>
+          </button>
         </div>
       </div>
 
-      <!-- Gallery Item -->
-      <div class="relative group overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
-        <img src="assets/pool.jpg" alt="Pool Renovation"
-          class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
-        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-          <h3 class="text-white text-lg font-semibold">Pool Renovation</h3>
+      <!-- Pool Renovation -->
+      <div class="grid lg:grid-cols-2 gap-10 items-center" id="poolrenovation">
+        <!-- Video Left -->
+        <div
+          class="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-lg mx-auto 
+                  max-w-[260px] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[350px] xl:max-w-[400px] border-b-4 border-[#c857163d]"
+          data-aos="fade-right" data-aos-delay="100">
+          <video class="w-full h-full object-cover rounded-2xl" preload="metadata">
+            <source src="assets/pool.mp4" type="video/mp4">
+          </video>
+          <!-- Play Button -->
+          <button class="absolute inset-0 flex items-center justify-center play-btn">
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-[#C85716] flex items-center justify-center shadow-lg hover:scale-110 transition">
+              <i class="fa-solid fa-play text-white text-xl md:text-2xl ml-1"></i>
+            </div>
+          </button>
         </div>
-      </div>
-
-      <!-- Gallery Item -->
-      <div class="relative group overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="300">
-        <img src="assets/interior.webp" alt="Interior Design"
-          class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
-        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-          <h3 class="text-white text-lg font-semibold">Interior Design</h3>
-        </div>
-      </div>
-
-      <!-- Gallery Item -->
-      <div class="relative group overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="400">
-        <img src="assets/exterior.jpg" alt="Exterior Work"
-          class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
-        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-          <h3 class="text-white text-lg font-semibold">Exterior Renovation</h3>
-        </div>
-      </div>
-
-      <!-- Gallery Item -->
-      <div class="relative group overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="500">
-        <img src="assets/commercial.webp" alt="Commercial Project"
-          class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
-        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-          <h3 class="text-white text-lg font-semibold">Commercial Project</h3>
+        <!-- Content Right -->
+        <div class="text-white space-y-4" data-aos="fade-left" data-aos-delay="200">
+          <h2 class="text-3xl font-bold text-[#C85716] w-96 bg-[#c857161f] px-6 py-2 rounded-full text-center">Pool
+            Renovation</h2>
+          <p class="text-gray-300">We design, construct, and maintain beautiful swimming pools with durable finishing
+            and modern waterproofing techniques.</p>
+          <ul
+            class="space-y-2 text-gray-400 group hover:translate-x-0.5 hover:text-white transition-all duration-300 ease">
+            <li class="flex items-center gap-2"><i
+                class="fa-solid fa-water-ladder text-[#C85716] bg-transparent p-3 group-hover:bg-[#C85716] group-hover:text-white transition-all duration-200 ease rounded-full cursor-pointer"></i>
+              Design & Construction of Pools</li>
+            <li class="flex items-center gap-2"><i
+                class="fa-solid fa-wrench text-[#C85716] bg-transparent p-3 group-hover:bg-[#C85716] group-hover:text-white transition-all duration-200 ease rounded-full cursor-pointer"></i>
+              Pool Maintenance & Repair</li>
+            <li class="flex items-center gap-2"><i
+                class="fa-solid fa-droplet text-[#C85716] bg-transparent p-3 group-hover:bg-[#C85716] group-hover:text-white transition-all duration-200 ease rounded-full cursor-pointer"></i>
+              Waterproofing & Finishing Work</li>
+          </ul>
         </div>
       </div>
 
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Contact Section -->
-<section id="contact" class="relative py-20 lg:py-28 ">
-  <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
+  <!-- JS to control play button -->
+  <script>
+    document.querySelectorAll('.play-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const video = btn.previousElementSibling;
+        video.play();
+        video.setAttribute("controls", "true");
+        btn.style.display = 'none';
+      });
+    });
+  </script>
 
-<!-- Left: Map with DM Wrapper -->
-<div class="w-full md:w-[87%] lg:flex-1 h-96 md:h-[500px] lg:h-[650px] xl:h-[650px] 2xl:h-[655px] relative" data-aos="fade-right">
-  <!-- Google Map -->
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.123456789!2d73.0833!3d31.4504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904e123456789%3A0xc0ffee1234567890!2sFaisalabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1234567890" 
-    class="w-full h-full rounded-2xl shadow-lg border-0" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-
-  <!-- DM Wrapper -->
-  <div class="absolute top-4 left-4 bg-[#02161f]/90 p-4 rounded-xl shadow-lg border-b-4 border-[#c857165b] z-10 flex flex-col gap-2">
-    <span class="text-white font-semibold">Direct Message Us</span>
-    <span class="text-gray-300 text-sm">We are here to help you!</span>
-  </div>
-</div>
-
-    <!-- Right: Contact Info & Form -->
-    <div class="flex-1 flex flex-col gap-6" data-aos="fade-left">
-
-      <!-- WhatsApp Block -->
-      <div class="bg-[#02161f] p-6 rounded-2xl shadow-lg border-b-4 border-[#c857165b] flex flex-col sm:flex-row items-start gap-4 justify-between hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-[#1d0d04] transition-all duration-200 ease-in">
-        <div class="flex items-center gap-3">
-          <i class="fa-brands fa-whatsapp text-xl text-[#C85716]"></i>
-          <span class="text-gray-300 font-semibold">M. Bilal: +971 54 7057716</span>
-        </div>
-        <div class="flex items-center gap-3">
-          <i class="fa-brands fa-whatsapp text-xl text-[#C85716]"></i>
-          <span class="text-gray-300 font-semibold">Qadir: +971 50 9200192</span>
-        </div>
+  <!-- Other Services -->
+  <section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-0">
+      <!-- Section Heading -->
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+          Other <strong class="text-[#C85716]">Services</strong>
+        </h2>
+        <p class="mt-4 text-gray-300 text-base sm:text-lg max-w-2xl mx-auto">
+          Go Home Maintenance and Renovation Services L.L.C, we provide a wide range of high-quality services to
+          make your spaces modern, durable, and beautiful.
+        </p>
       </div>
 
-      <!-- Email Block -->
-      <div class="bg-[#02161f] p-6 rounded-2xl shadow-lg border-b-4 border-[#c857165b] flex items-center gap-3 hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-[#1d0d04] transition-all duration-200 ease-in">
-        <i class="fa-solid fa-envelope text-xl text-[#C85716]"></i>
-        <span class="text-gray-300 font-semibold">smbtechnical3@gmail.com</span>
+      <!-- Services Grid -->
+      <div
+        class="grid gap-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 justify-items-center">
+
+        <!-- Outer Wrapper for AOS -->
+        <div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+          <div id="ac" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
+              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
+            <img src="assets/ac.png" alt="AC Maintenance & Installation"
+              class="w-full h-56 xl:h-72 2xl:h-80 object-cover ">
+
+            <div class="p-6 space-y-3">
+              <h3 class="text-2xl font-bold text-white">AC Maintenance & Installation</h3>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Cooling</span>
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Comfort</span>
+              </div>
+              <p class="text-gray-300 text-base leading-relaxed">
+                Stay cool with our expert AC repair, servicing, and installation. We ensure your cooling systems work
+                efficiently all year round.
+              </p>
+              <a href="detail.html"
+                class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
+                data-aos="fade-up">
+                <span>Learn More</span>
+                <i
+                  class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- 2 Glass & Gypsum Partition -->
+        <div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+          <div id="glass" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
+              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
+            <img src="assets/glass.jpg" alt="Glass & Gypsum Partition"
+              class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
+            <div class="p-6 space-y-3">
+              <h3 class="text-2xl font-bold text-white">Glass & Gypsum Partition</h3>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Modern</span>
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Elegant</span>
+              </div>
+              <p class="text-gray-300 text-base leading-relaxed">
+                Create stylish and functional spaces with our expert glass and gypsum partition services, perfect for
+                offices and homes.
+              </p>
+              <a href="detail.html"
+                class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
+                data-aos="fade-up">
+                <span>Learn More</span>
+                <i
+                  class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Internal & External Paint -->
+        <div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+          <div id="paint" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
+              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
+            <img src="assets/paint.jpg" alt="Internal & External Paint"
+              class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
+            <div class="p-6 space-y-3">
+              <h3 class="text-2xl font-bold text-white">Internal & External Paint</h3>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Vibrant</span>
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Smooth</span>
+              </div>
+              <p class="text-gray-300 text-base leading-relaxed">
+                Enhance your property with our professional interior and exterior painting services that provide
+                long-lasting beauty.
+              </p>
+              <a href="detail.html"
+                class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
+                data-aos="fade-up">
+                <span>Learn More</span>
+                <i
+                  class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Floor & Wall Tile Work -->
+        <div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+          <div id="tiles" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
+              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
+            <img src="assets/tiles.jpg" alt="Floor & Wall Tile Work" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
+            <div class="p-6 space-y-3">
+              <h3 class="text-2xl font-bold text-white">Floor & Wall Tile Work</h3>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Durable</span>
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Stylish</span>
+              </div>
+              <p class="text-gray-300 text-base leading-relaxed">
+                Premium tile installation for floors and walls, delivering strength and elegant finishes to your spaces.
+              </p>
+              <a href="detail.html"
+                class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
+                data-aos="fade-up">
+                <span>Learn More</span>
+                <i
+                  class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 PVC Flooring -->
+        <div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+          <div id="pvc" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
+              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
+            <img src="assets/pvc.webp" alt="PVC Flooring" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
+            <div class="p-6 space-y-3">
+              <h3 class="text-2xl font-bold text-white">PVC Flooring</h3>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Modern</span>
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Durable</span>
+              </div>
+              <p class="text-gray-300 text-base leading-relaxed">
+                Affordable and stylish PVC flooring solutions that are long-lasting, waterproof, and easy to maintain.
+              </p>
+              <a href="detail.html"
+                class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
+                data-aos="fade-up">
+                <span>Learn More</span>
+                <i
+                  class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 Plumbing Work -->
+        <div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+          <div id="plumbing" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
+              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
+            <img src="assets/plumbing.jpg" alt="Plumbing Work" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
+            <div class="p-6 space-y-3">
+              <h3 class="text-2xl font-bold text-white">Plumbing Work</h3>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Leak-Free</span>
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Efficient</span>
+              </div>
+              <p class="text-gray-300 text-base leading-relaxed">
+                Expert plumbing installations and repairs to keep your water systems reliable and efficient.
+              </p>
+              <a href="detail.html"
+                class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
+                data-aos="fade-up">
+                <span>Learn More</span>
+                <i
+                  class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 Electrical Work -->
+        <div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+          <div id="electrical" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
+              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
+            <img src="assets/electrical.jpeg" alt="Electrical Work" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
+            <div class="p-6 space-y-3">
+              <h3 class="text-2xl font-bold text-white">Electrical Work</h3>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Safe</span>
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Reliable</span>
+              </div>
+              <p class="text-gray-300 text-base leading-relaxed">
+                From wiring to lighting, we provide professional electrical services ensuring safety and efficiency.
+              </p>
+              <a href="detail.html"
+                class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
+                data-aos="fade-up">
+                <span>Learn More</span>
+                <i
+                  class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 Garden Pergola Work -->
+        <div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+          <div id="garden" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
+              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
+            <img src="assets/garden.jpg" alt="Garden Pergola Work" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
+            <div class="p-6 space-y-3">
+              <h3 class="text-2xl font-bold text-white">Garden Pergola Work</h3>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Elegant</span>
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Durable</span>
+              </div>
+              <p class="text-gray-300 text-base leading-relaxed">
+                Beautify your garden with custom-designed pergolas that provide shade and enhance outdoor living.
+              </p>
+              <a href="detail.html"
+                class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
+                data-aos="fade-up">
+                <span>Learn More</span>
+                <i
+                  class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 Water Tank Cleaning -->
+        <div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+          <div id="water" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
+              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
+            <img src="assets/watertank.jpg" alt="Water Tank Cleaning" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
+            <div class="p-6 space-y-3">
+              <h3 class="text-2xl font-bold text-white">Water Tank Cleaning</h3>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Hygienic</span>
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Safe</span>
+              </div>
+              <p class="text-gray-300 text-base leading-relaxed">
+                Ensure clean and safe water supply with our professional water tank cleaning services.
+              </p>
+              <a href="detail.html"
+                class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
+                data-aos="fade-up">
+                <span>Learn More</span>
+                <i
+                  class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 Roof Waterproofing -->
+        <div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+          <div id="roof" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
+              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
+            <img src="assets/roof.webp" alt="Roof Waterproofing" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
+            <div class="p-6 space-y-3">
+              <h3 class="text-2xl font-bold text-white">Roof Waterproofing</h3>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Protective</span>
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Reliable</span>
+              </div>
+              <p class="text-gray-300 text-base leading-relaxed">
+                Prevent leaks and water damage with our long-lasting waterproofing solutions.
+              </p>
+              <a href="detail.html"
+                class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
+                data-aos="fade-up">
+                <span>Learn More</span>
+                <i
+                  class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 Swimming Pool -->
+        <div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+          <div id="pool" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
+              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
+            <img src="assets/swimming.webp" alt="Swimming Pool" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
+            <div class="p-6 space-y-3">
+              <h3 class="text-2xl font-bold text-white">Swimming Pool</h3>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Luxury</span>
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Relax</span>
+              </div>
+              <p class="text-gray-300 text-base leading-relaxed">
+                We build, renovate, and maintain swimming pools that combine relaxation with style and durability.
+              </p>
+              <a href="detail.html"
+                class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
+                data-aos="fade-up">
+                <span>Learn More</span>
+                <i
+                  class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 Customized Work -->
+        <div data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+          <div id="custom" class="bg-[#02161f] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(200,87,22,0.2)]
+              w-full max-w-md h-auto mx-auto border-b-4 border-[#c857165b] group">
+            <img src="assets/customize.jpg" alt="Customized Work" class="w-full h-56 xl:h-72 2xl:h-80 object-cover">
+            <div class="p-6 space-y-3">
+              <h3 class="text-2xl font-bold text-white">Customized Work</h3>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Flexible</span>
+                <span
+                  class="px-3 py-1 text-sm bg-[#C85716]/20 text-[#C85716] rounded-full group-hover:text-white group-hover:bg-[#C85716] transition-all duration-200 ease-in">Quality</span>
+              </div>
+              <p class="text-gray-300 text-base leading-relaxed">
+                Any special renovation or maintenance task tailored to your specific requirements with high-quality
+                execution.
+              </p>
+              <a href="detail.html"
+                class="group inline-flex items-center px-5 py-2 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out"
+                data-aos="fade-up">
+                <span>Learn More</span>
+                <i
+                  class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-0.5"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
       </div>
-
-<!-- Contact Form -->
-<form id="contactForm" class="bg-[#02161f] p-6 rounded-2xl shadow-lg border-b-4 border-[#c857165b] space-y-4" data-aos="fade-up">
-  <h3 class="text-2xl font-bold text-white mb-4">Send Us a Message</h3>
-
-  <div class="flex flex-col sm:flex-row gap-4">
-    <input type="text" name="name" placeholder="Your Name" class="flex-1 p-3 rounded-lg bg-[#010a0e] border border-gray-800 text-white focus:outline-none focus:border-[#C85716] placeholder-gray-700" required>
-    <input type="email" name="email" placeholder="Your Email" class="flex-1 p-3 rounded-lg bg-[#010a0e] border border-gray-800 text-white focus:outline-none focus:border-[#C85716] placeholder-gray-700" required>
-  </div>
-
-  <input type="text" name="subject" placeholder="Subject" class="w-full p-3 rounded-lg bg-[#010a0e] border border-gray-800 text-white focus:outline-none focus:border-[#C85716] placeholder-gray-700" required>
-  <textarea name="message" placeholder="Message" rows="5" class="w-full p-3 rounded-lg bg-[#010a0e] border border-gray-800 text-white focus:outline-none focus:border-[#C85716] placeholder-gray-700" required></textarea>
-
-  <button type="submit" class="group inline-flex items-center px-7 py-3 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out">
-    Send Message
-    <i class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-1"></i>
-  </button>
-</form>
 
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer Section -->
-<footer class="bg-[#00060a] text-gray-300 pt-20 pb-6" data-aos="fade-up" data-aos-duration="1000">
-  <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:gap-8 xl:gap-8 2xl:gap-8 items-start">
+  <!-- Gallery Section -->
+  <section id="gallery" class="relative py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
-    <!-- Logo + Renovation + Description -->
-    <div class="flex flex-col gap-1" data-aos="fade-up" data-aos-duration="1200">
-      <div class="flex items-center gap-0">
-        <img src="assets/logo.PNG" alt="SMB Renovation Logo" class="w-15">
-        <span class="text-[#C85716] font-bold text-3xl mt-2">Renovation</span>
-      </div>
-      <p class="text-gray-400 text-sm max-w-xs md:mb-0 mb-3">
-        Transforming your spaces with modern design, quality, and durability. Your trusted partner in renovations.
-      </p>
-    </div>
-
-    <!-- Links & Services Columns -->
-    <div class="flex flex-col gap-6 md:flex-row md:justify-start lg:-ml-40">
-
-      <!-- Quick Links -->
-      <div class="flex flex-col gap-2" data-aos="fade-up" data-aos-duration="1400">
-        <h3 class="text-white font-semibold mb-2 lg:mr-24">Quick Links</h3>
-        <a href="#home" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Home</a>
-        <a href="#about" class="hover:text-[#C85716] hover:underline transition-colors duration-200">About</a>
-        <a href="#services" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Services</a>
-        <a href="#gallery" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Gallery</a>
-        <a href="#contact" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Contact Us</a>
+      <!-- Section Heading -->
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+          Our Project <span class="text-[#C85716]">Gallery</span>
+        </h2>
+        <p class="mt-4 text-gray-300 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto">
+          Explore our latest renovation and maintenance works from modern kitchens
+          to luxury bathrooms, interiors, exteriors, and pools. Quality and design you can trust.
+        </p>
       </div>
 
-      <!-- Our Services Split in Two Columns -->
-      <div class="flex gap-8" data-aos="fade-up" data-aos-duration="1600">
-        <!-- Column 1 -->
-        <div class="flex flex-col gap-2">
-          <h3 class="text-white font-semibold mb-2 lg:mr-44">Our Services</h3>
-          <a href="#ac" class="hover:text-[#C85716] hover:underline transition-colors duration-200">AC Maintenance & Installation</a>
-          <a href="#glass" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Glass & Gypsum Partition</a>
-          <a href="#paint" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Internal & External Paint</a>
-          <a href="#tiles" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Floor & Wall Tile Work</a>
-          <a href="#pvc" class="hover:text-[#C85716] hover:underline transition-colors duration-200">PVC Flooring</a>
-          <a href="#plumbing" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Plumbing Work</a>
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+        <!-- Gallery Item -->
+        <div class="relative group overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in">
+          <img src="assets/kitchen.jpg" alt="Kitchen Renovation"
+            class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <h3 class="text-white text-lg font-semibold">Kitchen Renovation</h3>
+          </div>
         </div>
 
-        <!-- Column 2 -->
-        <div class="flex flex-col gap-2 mt-6 md:mt-0 lg:mt-10">
-          <a href="#electrical" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Electrical Work</a>
-          <a href="#garden" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Garden Pergola Work</a>
-          <a href="#water" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Water Tank Cleaning</a>
-          <a href="#roof" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Roof Waterproofing</a>
-          <a href="#pool" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Swimming Pool</a>
-          <a href="#custom" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Customized Work</a>
+        <!-- Gallery Item -->
+        <div class="relative group overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+          <img src="assets/bathroom.webp" alt="Bathroom Design"
+            class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <h3 class="text-white text-lg font-semibold">Bathroom Upgrade</h3>
+          </div>
+        </div>
+
+        <!-- Gallery Item -->
+        <div class="relative group overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/pool.jpg" alt="Pool Renovation"
+            class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <h3 class="text-white text-lg font-semibold">Pool Renovation</h3>
+          </div>
+        </div>
+
+        <!-- Gallery Item -->
+        <div class="relative group overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="300">
+          <img src="assets/interior.webp" alt="Interior Design"
+            class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <h3 class="text-white text-lg font-semibold">Interior Design</h3>
+          </div>
+        </div>
+
+        <!-- Gallery Item -->
+        <div class="relative group overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="400">
+          <img src="assets/exterior.jpg" alt="Exterior Work"
+            class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <h3 class="text-white text-lg font-semibold">Exterior Renovation</h3>
+          </div>
+        </div>
+
+        <!-- Gallery Item -->
+        <div class="relative group overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="500">
+          <img src="assets/commercial.webp" alt="Commercial Project"
+            class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <h3 class="text-white text-lg font-semibold">Commercial Project</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="relative py-20 lg:py-28 ">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
+
+      <!-- Left: Map with DM Wrapper -->
+      <div class="w-full md:w-[87%] lg:flex-1 h-96 md:h-[500px] lg:h-[650px] xl:h-[650px] 2xl:h-[655px] relative"
+        data-aos="fade-right">
+        <!-- Google Map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.123456789!2d73.0833!3d31.4504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904e123456789%3A0xc0ffee1234567890!2sFaisalabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1234567890"
+          class="w-full h-full rounded-2xl shadow-lg border-0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <!-- DM Wrapper -->
+        <div
+          class="absolute top-4 left-4 bg-[#02161f]/90 p-4 rounded-xl shadow-lg border-b-4 border-[#c857165b] z-10 flex flex-col gap-2">
+          <span class="text-white font-semibold">Direct Message Us</span>
+          <span class="text-gray-300 text-sm">We are here to help you!</span>
         </div>
       </div>
 
+      <!-- Right: Contact Info & Form -->
+      <div class="flex-1 flex flex-col gap-6" data-aos="fade-left">
+
+        <!-- WhatsApp Block -->
+        <div
+          class="bg-[#02161f] p-6 rounded-2xl shadow-lg border-b-4 border-[#c857165b] flex flex-col sm:flex-row items-start gap-4 justify-between hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-[#1d0d04] transition-all duration-200 ease-in">
+          <div class="flex items-center gap-3">
+            <i class="fa-brands fa-whatsapp text-xl text-[#C85716]"></i>
+            <span class="text-gray-300 font-semibold">M. Bilal: +971 54 7057716</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-brands fa-whatsapp text-xl text-[#C85716]"></i>
+            <span class="text-gray-300 font-semibold">Qadir: +971 50 9200192</span>
+          </div>
+        </div>
+
+        <!-- Email Block -->
+        <div
+          class="bg-[#02161f] p-6 rounded-2xl shadow-lg border-b-4 border-[#c857165b] flex items-center gap-3 hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-[#1d0d04] transition-all duration-200 ease-in">
+          <i class="fa-solid fa-envelope text-xl text-[#C85716]"></i>
+          <span class="text-gray-300 font-semibold">gohometechnical3@gmail.com</span>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="bg-[#02161f] p-6 rounded-2xl shadow-lg border-b-4 border-[#c857165b] space-y-4"
+          data-aos="fade-up">
+          <h3 class="text-2xl font-bold text-white mb-4">Send Us a Message</h3>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <input type="text" name="name" placeholder="Your Name"
+              class="flex-1 p-3 rounded-lg bg-[#010a0e] border border-gray-800 text-white focus:outline-none focus:border-[#C85716] placeholder-gray-700"
+              required>
+            <input type="email" name="email" placeholder="Your Email"
+              class="flex-1 p-3 rounded-lg bg-[#010a0e] border border-gray-800 text-white focus:outline-none focus:border-[#C85716] placeholder-gray-700"
+              required>
+          </div>
+
+          <input type="text" name="subject" placeholder="Subject"
+            class="w-full p-3 rounded-lg bg-[#010a0e] border border-gray-800 text-white focus:outline-none focus:border-[#C85716] placeholder-gray-700"
+            required>
+          <textarea name="message" placeholder="Message" rows="5"
+            class="w-full p-3 rounded-lg bg-[#010a0e] border border-gray-800 text-white focus:outline-none focus:border-[#C85716] placeholder-gray-700"
+            required></textarea>
+
+          <button type="submit"
+            class="group inline-flex items-center px-7 py-3 bg-[#C85716] text-white font-semibold rounded-full shadow-md hover:bg-[#a84610] transition duration-200 ease-in-out">
+            Send Message
+            <i
+              class="fa-solid fa-arrow-right ml-3 transform transition-transform duration-300 group-hover:translate-x-1"></i>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-[#00060a] text-gray-300 pt-20 pb-6" data-aos="fade-up" data-aos-duration="1000">
+    <div
+      class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:gap-8 xl:gap-8 2xl:gap-8 items-start">
+
+      <!-- Logo + Renovation + Description -->
+      <div class="flex flex-col gap-1" data-aos="fade-up" data-aos-duration="1200">
+        <div class="flex items-center gap-0">
+          <img src="assets/logo.PNG" alt="SMB Renovation Logo" class="w-16">
+          <span class="text-[#C85716] font-bold text-3xl -ml-3">Renovation</span>
+        </div>
+        <p class="text-gray-400 text-sm max-w-xs md:mb-0 mb-3">
+          Transforming your spaces with modern design, quality, and durability. Your trusted partner in renovations.
+        </p>
+      </div>
+
+      <!-- Links & Services Columns -->
+      <div class="flex flex-col gap-6 md:flex-row md:justify-start lg:-ml-40">
+
+        <!-- Quick Links -->
+        <div class="flex flex-col gap-2" data-aos="fade-up" data-aos-duration="1400">
+          <h3 class="text-white font-semibold mb-2 lg:mr-24">Quick Links</h3>
+          <a href="#home" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Home</a>
+          <a href="#about" class="hover:text-[#C85716] hover:underline transition-colors duration-200">About</a>
+          <a href="#services" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Services</a>
+          <a href="#gallery" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Gallery</a>
+          <a href="#contact" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Contact Us</a>
+        </div>
+
+        <!-- Our Services Split in Two Columns -->
+        <div class="flex gap-8" data-aos="fade-up" data-aos-duration="1600">
+          <!-- Column 1 -->
+          <div class="flex flex-col gap-2">
+
+            <h3 class="text-white font-semibold mb-2 lg:mr-44">Our Services</h3>
+                        <a href="#kitchenrenovation" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Kitchen Renovation</a>
+                          <a href="#toiletrenovation" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Toilet Renovation</a>
+                          <a href="#poolrenovation" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Pool Renovation</a>
+            <a href="#ac" class="hover:text-[#C85716] hover:underline transition-colors duration-200">AC Maintenance &
+              Installation</a>
+            <a href="#glass" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Glass & Gypsum
+              Partition</a>
+            <a href="#paint" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Internal &
+              External Paint</a>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="flex flex-col gap-2 mt-6 md:mt-0 lg:mt-10">
+                        <a href="#tiles" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Floor & Wall
+              Tile Work</a>
+            <a href="#pvc" class="hover:text-[#C85716] hover:underline transition-colors duration-200">PVC Flooring</a>
+            <a href="#plumbing" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Plumbing
+              Work</a>
+            <a href="#electrical" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Electrical
+              Work</a>
+            <a href="#garden" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Garden Pergola
+              Work</a>
+            <a href="#water" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Water Tank
+              Cleaning</a>
+            <a href="#roof" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Roof
+              Waterproofing</a>
+            <a href="#pool" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Swimming
+              Pool</a>
+            <a href="#custom" class="hover:text-[#C85716] hover:underline transition-colors duration-200">Customized
+              Work</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-  </div>
-
-  <!-- Bottom Copyright -->
-  <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-500 text-sm" data-aos="fade-up" data-aos-duration="1000">
-    &copy; 2025 <span class="text-white">SMB</span><span class="text-[#C85716]">Renovation.</span>  All rights reserved.
-  </div>
-</footer>
-
-
+    <!-- Bottom Copyright -->
+    <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-500 text-sm">
+      &copy; 2025 <span class="text-white">Go Home</span><span class="text-[#C85716]">Renovation</span> All rights
+      reserved.
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
